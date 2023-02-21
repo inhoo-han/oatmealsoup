@@ -5,29 +5,29 @@
 */
 /* 폰트 */
 @font-face {
-    font-family: "NanumR";
+    font-family: "NeoA";
     font-weight: normal;
-    src: url("../font/NanumSquareRoundR.ttf")format("truetype");
+    src: url("../font/NanumSquareNeo-aLt.ttf")format("truetype");
 }
 @font-face {
-    font-family: "NanumL";
+    font-family: "NeoB";
     font-weight: normal;
-    src: url("../font/NanumSquareRoundL.ttf")format("truetype");
+    src: url("../font/NanumSquareNeo-bRg.ttf")format("truetype");
 }
 @font-face {
-    font-family: "NanumB";
-    font-weight: bold;
-    src: url("../font/NanumSquareRoundB.ttf")format("truetype");
-}
-@font-face {
-    font-family: "NanumEB";
-    font-weight: bold;
-    src: url("../font/NanumSquareRoundEB.ttf")format("truetype");
-}
-@font-face {
-    font-family: "sungsil";
+    font-family: "NeoC";
     font-weight: normal;
-    src: url("../font/나눔손글씨\ 성실체.ttf")format("truetype");
+    src: url("../font/NanumSquareNeo-cBd.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NeoD";
+    font-weight: normal;
+    src: url("../font/NanumSquareNeo-dEb.ttf")format("truetype");
+}
+@font-face {
+    font-family: "NeoE";
+    font-weight: normal;
+    src: url("../font/NanumSquareNeo-eHv.ttf")format("truetype");
 }
 @font-face {
     font-family: "webIcon";
@@ -56,7 +56,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: "NanumR";
+	font-family: "NeoA";
 	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */

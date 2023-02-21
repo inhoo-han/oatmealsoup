@@ -1,41 +1,75 @@
 @charset "UTF-8";
 
-html, body{
+/* html, body{
     width: 100%;
     height: 100%;
-}
+} */
 /* * * * * #wrap * * * * */
 #wrap{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 /* * * * * #container * * * * */
 #container{
     position: relative;
     width: 100%;
-    height: 95%;
+    height: 100%;
     border: 1px solid navy;
 }
-/* * * * * #menu * * * * */
-#menu{
+/* * * * * header * * * * */
+header{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    border: 10px dashed transparent;
+    border-image: linear-gradient(to bottom, #171738 0%, #3423a6 100%);
+    border-image-slice: 1;
+    /* background-color: #171738; */
     z-index: 10;
+}
+/* * * * * nav * * * * */
+nav{
     position: absolute;
     width: 20%;
     height: 100%;
-    border-right: 10px solid transparent;
-    border-image: linear-gradient(to right, #2E1760 0%, #171738 100%);
+    right: 0;
+    /* background-color: #fff; */
+    border-left: 10px dashed transparent;
+    border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
     border-image-slice: 1;
+    
+    z-index: 10;
 }
 /* * * * * #contents * * * * */
 #contents{
     position: relative;
+    width: 65%;
+    height: 100%;
+    left: 25%;
+    background-color: #fff;
+    /* border: 1px solid red; */
+}
+#contents .contents_in{
+    position: relative;
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    border: 10px solid transparent;
-    border-image: linear-gradient(to right, #23174c 0%, #23174c 25%, #2e1760 50%, #311d83 75%, #3423a6 100%);
-    border-image-slice: 1;
+    overflow: hidden;
+}
+#contents .contents_in .opacity{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0  , 0.5) 0%, transparent 100% );
+    z-index: 10;
+}
+#contents .contents_in img{
+    position: relative;
+    height: 100%;
+    left: -20%;
 }
 /* * * * * footer * * * * */
 footer{
