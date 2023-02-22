@@ -9,6 +9,9 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    /* border: 10px dashed transparent;
+    border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
+    border-image-slice: 1; */
 }
 /* * * * * #container * * * * */
 #container{
@@ -20,7 +23,7 @@
 /* * * * * header * * * * */
 header{
     position: absolute;
-    width: 25%;
+    width: 500px;
     height: 100%;
     min-width: 300px;
     left: 0;
@@ -46,8 +49,8 @@ h1 p{
 h1 .game p{
     font-family: "NeoE";
     font-weight: bold;
-    font-size: 3em;
-    padding: 50px 0px ;
+    font-size: 3.5em;
+    padding: 50px 30px ;
     text-align: center;
 }
 h1 .game b{
@@ -56,7 +59,7 @@ h1 .game b{
 h1 .teamName{
     position: absolute;
     top: 50px;
-    left: 190px;
+    right: 55px;
     padding: 5px;
     font-size: 0.8em;
     border: 1px solid #ccc;
@@ -64,7 +67,7 @@ h1 .teamName{
 }
 h1 .ourName{
     top: -30px;
-    padding: 10px;
+    padding: 0 40px;
     /* border: 1px solid navy; */
     font-style: italic;
 }
@@ -176,7 +179,7 @@ nav #menu{
 }
 #menu .navi li a.show:hover{
     padding-left: 10px;
-    color: red;                 /*색깔변경*/
+    color: #999;                 /*색깔변경*/
 }
 /* 로그인 영역 */
 nav #login{
@@ -211,9 +214,9 @@ nav #login .button{
 /* * * * * #contents * * * * */
 #contents{
     position: relative;
-    width: 65%;
+    width: 66%;
     height: 100%;
-    left: 25%;
+    left: 500px;
     background-color: #fff;
     /* border: 1px solid red; */
 }
@@ -222,9 +225,6 @@ nav #login .button{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border: 10px dashed transparent;
-    border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
-    border-image-slice: 1;
 }
 #contents .contents_in .opacity{
     position: absolute;
