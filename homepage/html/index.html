@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/index.js"></script>
     <title>오트밀 국밥</title>
 </head>
 <body>
@@ -16,16 +19,20 @@
             <header>
                 <h1 class="title">
                     <div class="inner">
-                        <p>Team <b>OatmealSoup</b></p>
-                        <p>
-                            <span>스토리 : 김메리</span>
-                            <span>프론트 : 한이누</span>
-                            <span>백엔드 : 김갓신</span>
+                        <div class="game">
+                            <p><b>카인</b>컴플렉스</p>
+                        </div>
+                        <p class="teamName">PUBLISHED by TeamOMS</p>
+                        <p class="ourName">
+                            <span>김메리가스토리를기똥차게만들고</span>
+                            <span>한이누가프론트만들고</span>
+                            <span>김갓신이데이터베이스연결한다</span>
+                            <span>조막만한글이쭉있으면깐지날것같아서적어봄</span>
                         </p>
                     </div>
                 </h1>
-                <div class="footer">
-                    작고 귀여운 푸터영역이 여기에 있습니다.
+                <div id="footer">
+                    copyright &copy; <span>TeamOatMealSoup.</span> All Rights Reserved.
                 </div>
             </header>
             <nav>
@@ -37,17 +44,24 @@
                 <div id="menu">
                     <div class="navi">
                         <ul>
-                            <li class="menu01"><a href="#" class="">menu01</a></li>
-                            <li class="menu02"><a href="#" class="">menu02</a></li>
-                            <li class="menu03"><a href="#" class="">menu03</a></li>
-                            <li class="menu04"><a href="#" class="">menu04</a></li>
+                            <li class="menu01"><a href="#" class="">Game Start</a></li>
+                            <li class="menu02"><a href="#" class="">Notice</a></li>
+                            <li class="menu03"><a href="#" class="">About</a></li>
+                            <li class="menu04"><a href="#" class="">Information</a></li>
                         </ul>
+                    </div>
+                </div>
+                <!-- header영역으로 이시가는건 어떤지 고민중 -->
+                <div id="login">
+                    <div class="button">로그인</div>
+                    <div class="success">
+
                     </div>
                 </div>
             </nav>
             <div id="contents">
                 <div class="contents_in">
-                    <div class="opacity"></div>
+                    <!-- <div class="opacity"></div> -->
                     <img src="../images/colorSample.jpg" alt="메인이미지">
                 </div>
             </div>

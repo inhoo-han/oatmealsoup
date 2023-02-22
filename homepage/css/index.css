@@ -15,33 +15,199 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid navy;
+    /* border: 1px solid navy; */
 }
 /* * * * * header * * * * */
 header{
     position: absolute;
     width: 25%;
     height: 100%;
+    min-width: 300px;
     left: 0;
-    border: 10px dashed transparent;
+    /* border: 10px dashed transparent;
     border-image: linear-gradient(to bottom, #171738 0%, #3423a6 100%);
-    border-image-slice: 1;
+    border-image-slice: 1; */
     /* background-color: #171738; */
     z-index: 10;
 }
+h1{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    padding: 20px;
+    /* background-color: #333; */
+}
+h1 p{
+    position: relative;
+    margin: 0 auto;
+    /* border:  1px solid #000; */
+}
+h1 .game p{
+    font-family: "NeoE";
+    font-weight: bold;
+    font-size: 3em;
+    padding: 50px 0px ;
+    text-align: center;
+}
+h1 .game b{
+    font-size: 1.5em;
+}
+h1 .teamName{
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    padding: 5px;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    
+}
+h1 .ourName{
+    top: -30px;
+    padding: 10px;
+    /* border: 1px solid navy; */
+    font-style: italic;
+}
+h1 .ourName span{
+    display: block;
+    padding: 3px 0;
+}
+
+
+/* * * * * footer * * * * */
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    text-align: center;
+}
+
 /* * * * * nav * * * * */
 nav{
     position: absolute;
-    width: 20%;
+    width: 160px;
     height: 100%;
     right: 0;
     /* background-color: #fff; */
-    border-left: 10px dashed transparent;
-    border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
-    border-image-slice: 1;
-    
+    background-color: #e4f2ff;
+    transition: 0.8s ease-in-out;
+    z-index: 9;
+    overflow: hidden;
+}
+nav.show{
+    width: 300px;
+}
+nav .toggle{
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
     z-index: 10;
 }
+nav .toggle .title{
+    text-align: center;
+    font-family: "NeoD";
+    line-height: 100px;
+    letter-spacing: 0.3em;
+}
+nav .toggle span{
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 3px;
+    left: 40px;
+    border-radius: 3px;
+    background-color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+nav .toggle span:nth-child(2){
+    top: 85px;
+}
+nav .toggle span:nth-child(3){
+    top: 100px;
+}
+.toggle:hover span:nth-child(2){
+    top: 83px;
+}
+.toggle:hover span:nth-child(3){
+    top: 102px;
+}
+.toggle.active span:nth-child(2){
+    transform: rotate(30deg);
+    top: 90px;
+}
+.toggle.active span:nth-child(3){
+    transform: rotate(-30deg);
+    top: 90px;
+}
+
+nav #menu{
+    /* display: none; */
+    position: relative;
+    width: 300px;
+    height: 100%;
+}
+#menu .navi{
+    position: relative;
+    width: 100%;
+    /* height: 50%; */
+    top: 30%;
+    padding: 40px;
+    align-self: flex-start;         /*체크*/
+
+}
+#menu .navi li a{
+    display: block;
+    padding: 30px 0 30px 20px;
+    /* padding-left: 20px; */
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+    font-family: "NeoB";
+    font-size: 1.2em;
+    color: #333;
+}
+#menu .navi li a.show{
+    opacity: 1;
+    padding-left: 0;
+}
+#menu .navi li a.show:hover{
+    padding-left: 10px;
+    color: red;                 /*색깔변경*/
+}
+/* 로그인 영역 */
+nav #login{
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    background-color: #fff;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+nav #login.show{
+    opacity: 1;
+}
+nav #login .button{
+    position: relative;
+    width: 160px;
+    height: 50px;
+    margin: 75px auto;
+    border: 3px solid #3423a6;
+    background-color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-family: "NeoC";
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
 /* * * * * #contents * * * * */
 #contents{
     position: relative;
@@ -56,6 +222,9 @@ nav{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border: 10px dashed transparent;
+    border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
+    border-image-slice: 1;
 }
 #contents .contents_in .opacity{
     position: absolute;
@@ -70,11 +239,4 @@ nav{
     position: relative;
     height: 100%;
     left: -20%;
-}
-/* * * * * footer * * * * */
-footer{
-    position: relative;
-    width: 100%;
-    height: 5%;
-    text-align: center;
 }
