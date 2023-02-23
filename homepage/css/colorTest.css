@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#test{
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+#test .title{
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+#test>div{
+    display: none;
+}
+#sampleZone{
+    position: relative;
+    width: 500px;
+    height: 140px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#sampleZone .sample{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 19px;
+    background-color: salmon;
+    float: left;
+    overflow: hidden;
+}
+.sample img{
+    height: 100px;
+    cursor: pointer;
+}
+#colorZone{
+    position: relative;
+    width: 500px;
+    height: 100px;
+}
