@@ -16,5 +16,4 @@ $(function() {
             $('#login').removeClass('show');
         }
     });
-
 });

@@ -26,4 +26,7 @@ $(function() {
     $('#login .button').click(function() {
         alert('로그인창으로 연결됩니다.\n로그인후에는 마이페이지로 변경됩니다.');
     })
+    $('#container .teamName').click(function() {
+        alert('About Us로 넘어갑니다. ');
+    })
 });
