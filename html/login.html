@@ -45,18 +45,18 @@
                         <form action="#" method="get" name="login_form">
                             <p class="login_form_p login_form_id">
                                 <label for="email">이메일</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
                             </p>
                             <p class="login_form_p login_form_pw">
                                 <label for="pw">패스워드</label>
-                                <input type="password" id="pw">
+                                <input type="password" id="pw" required>
                                 <p class="forget_pw">
                                     <a href="#">패스워드를 잊으셨나요?</a>
                                 </p>
                             </p>
-                            <p class="login_form_p login_form_submit">
-                                <button class="login_form_login" type="submit">로그인</button>
-                                <button class="login_form_join" onclick="location.href='join.html'">회원가입</button>
+                            <p class="login_form_submit">
+                                <button class="login_form_btn login_form_login" type="submit">로그인</button>
+                                <button class="login_form_btn login_form_join" onclick="location.href='join.html'">회원가입</button>
                             </p>
                         </form>
                     </fieldset>
@@ -64,11 +64,21 @@
                     <div id="sns_login">
                         <h3 class="title">Or With</p>
                         <div class="sns_logo">
-                            <div class="logo kakao"><img src="../images/logjoin/icon_kakao.png" alt="카카오톡으로 로그인"></div>
-                            <div class="logo naver"><img src="../images/logjoin/icon_google.png" alt="구글로 로그인"></div>
-                            <div class="logo twitter"><img src="../images/logjoin/icon_twitter.png" alt="트위터로 로그인"></div>
+                            <div class="logo kakao">
+                                <img src="../images/logjoin/icon_kakao.png" alt="카카오톡으로 로그인">
+                                <p class="logo_name">Kakao</p>
+                            </div>
+                            <div class="logo naver">
+                                <img src="../images/logjoin/icon_google.png" alt="구글로 로그인">
+                                <p class="logo_name">Google</p>
+                            </div>
+                            <div class="logo twitter">
+                                <img src="../images/logjoin/icon_twitter.png" alt="트위터로 로그인">
+                                <p class="logo_name">twitter</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

@@ -82,14 +82,13 @@ h1 .our_name span{
     width: 700px;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid salmon;
-    outline: 3px solid #fff;
+    outline: 5px solid #fff;
     outline-offset: -20px;
 }
 /* USER LOGIN 타이틀 */
 #container h2.title{
+    position: absolute;
     width: 100%;
-    border: 1px solid yellow;
     padding: 30px 0;
     margin-top: 50px;
 }
@@ -103,18 +102,115 @@ h1 .our_name span{
 #login{
     position: relative;
     width: 100%;
-    border: 3px solid blue;
+    height: 100%;
+    padding-top: 300px;
+}
+/* 글씨색 설정 먼저 함 */
+#login p label, #login p a{
+    color: #fff;
 }
 #login .login_form_p{
     position: relative;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 500px;
-    height: 80px;
-    border: 3px solid #fff;
+    height: 60px;
+    border: 3px solid #aaa;
     border-radius: 40px;
+    background-color: transparent;
+}
+#login .login_form_p label{
+    display: inline-block;
+    width: 120px;
+    height: 52px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 52px;
+    /* background-color: red; */
+    font-family: 'NeoC';
+    font-size: 20px;
+}
+#login .login_form_p input{
+    display: inline-block;
+    width: 360px;
+    height: 52px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#login .login_form_p:has(input:focus){
+    border: 3px solid #fff;
+    transition: border 1s;
+}
+#login .forget_pw{
+    margin: -15px 0 0 110px;
+}
+/* 로그인 회원가입 버튼 영역*/
+#login .login_form_submit{
+    position: relative;
+    height: 100px;
+    margin: 50px 100px;
+}
+#login .login_form_btn{
+    margin: 20px auto;
+    height: 60px;
+    border: 3px solid #aaa;
+    border-radius: 40px;
+    background-color: transparent;
+    font-family: 'NeoC';
+    font-size: 20px;
+    color: #fff;
+}
+#login .login_form_login{
+    position: absolute;
+    left: 0;
+    width: 300px;
+}
+#login .login_form_join{
+    position: absolute;
+    right: 0;
+    width: 150px;
+    /* background-image: linear-gradient(0deg, #aaa 0%, #999 30%, #999 70%, #aaa 100%); */
+}
+#login .login_form_btn:hover{
+    border: 3px solid #fff;
+    transition: border 1s;
 }
 
-
-#login p label, #login p a{
+/* sns로 로그인하기 영역 */
+#sns_login{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+#sns_login .title{
+    margin: 10px 0;
+    text-align: center;
     color: #fff;
+    font-family: 'NeoC';
+    font-size: 20px;
+}
+#sns_login .sns_logo{
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#sns_login .sns_logo .logo{
+    position: relative;
+    margin: 0 10px;
+    display: inline-block;
+    flex: 0;
+}
+#sns_login .sns_logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+#sns_login .sns_logo .logo .logo_name{
+    font-size: 12px;
+    color: #fff;
+    font-family: 'NeoA';
 }
