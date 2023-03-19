@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <div id="login_wrap">
+        <!---------- [S] 왼쪽 헤더영역 ---------->
+        <header>
+            <h1 class="title" onclick="location.href='../index.html'">
+                <div class="inner">
+                    <div class="game_name">
+                        <p><b>카인</b>컴플렉스</p>
+                    </div>
+                    <p class="team_name"><a href="#">PUBLISHED by TeamOMS</a></p>
+                    <p class="our_name">
+                        <span>로그인 하시면 더 많은 서비스를 만나실 수 있습니다.</span>
+                    </p>
+                </div>
+            </h1>
+            <div id="footer">
+                copyright &copy; <span>TeamOatMealSoup.</span> All Rights Reserved.
+            </div>
+        </header>
+        <!---------- [E] 왼쪽 헤더영역 ---------->
+        <!---------- [S] 오른쪽 로그인영역 ---------->
+        <div id="login_area">
+            <div id="container">
+                <!-- 타이틀 -->
+                <h2 class="title">
+                    <p class="title_p title_p1">USER</p>
+                    <p class="title_p title_p2">LOGIN</p>
+                </h2>
+                <!-- 로그인 입력 및 전송 영역 -->
+                <div id="login">
+                    <fieldset>
+                        <legend>로그인영역</legend>
+                        <form action="#" method="get" name="login_form">
+                            <p class="login_form_p login_form_id">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email">
+                            </p>
+                            <p class="login_form_p login_form_pw">
+                                <label for="pw">패스워드</label>
+                                <input type="password" id="pw">
+                                <p class="forget_pw">
+                                    <a href="#">패스워드를 잊으셨나요?</a>
+                                </p>
+                            </p>
+                            <p class="login_form_p login_form_submit">
+                                <button class="login_form_login" type="submit">로그인</button>
+                                <button class="login_form_join" onclick="location.href='join.html'">회원가입</button>
+                            </p>
+                        </form>
+                    </fieldset>
+                    <!-- sns로 로그인하기 -->
+                    <div id="sns_login">
+                        <h3 class="title">Or With</p>
+                        <div class="sns_logo">
+                            <div class="logo kakao"><img src="../images/logjoin/icon_kakao.png" alt="카카오톡으로 로그인"></div>
+                            <div class="logo naver"><img src="../images/logjoin/icon_google.png" alt="구글로 로그인"></div>
+                            <div class="logo twitter"><img src="../images/logjoin/icon_twitter.png" alt="트위터로 로그인"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------- [E] 오른쪽 로그인영역 ---------->
+    </div>
+</body>

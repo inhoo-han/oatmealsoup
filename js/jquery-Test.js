@@ -23,9 +23,6 @@ $(function() {
     $('#menu .menu01').click(function() {
         alert('로그인하지 않으시면 게임이 저장되지 않습니다.\n그대로 진행하시겠습니까?');
     })
-    $('#login .button').click(function() {
-        alert('로그인창으로 연결됩니다.\n로그인후에는 마이페이지로 변경됩니다.');
-    })
     $('#container .teamName').click(function() {
         alert('About Us로 넘어갑니다. ');
     })
