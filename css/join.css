@@ -70,7 +70,7 @@ h1 .our_name span{
 }
 
 /* * * * * login영역 * * * * */
-#login_area{
+#join_area{
     position: relative;
     /* width: 70%; */
     height: 100%;
@@ -97,39 +97,41 @@ h1 .our_name span{
     font-family: 'NeoE';
     color: #fff;
     text-align: center;
+    /* letter-spacing: 5px; */
 }
-/* 로그인 폼 영역*/
-#login{
+/* 회원가입 폼 영역*/
+#join{
     position: relative;
     width: 100%;
     height: 100%;
     padding-top: 300px;
 }
 /* 글씨색 설정 먼저 함 */
-#login p label, #login p a{
+#join p label, #join p a{
     color: #fff;
 }
-#login .login_form_p{
+#join .join_form_p{
     position: relative;
-    margin: 30px auto;
+    margin: 00px auto 30px;
     width: 500px;
     height: 60px;
     border: 3px solid #aaa;
     border-radius: 40px;
     background-color: transparent;
+    border: 3px solid yellow;
 }
-#login .login_form_p label{
+#join .join_form_p label{
     display: inline-block;
     width: 120px;
-    height: 52px;
+    height: 60px;
     padding-left: 10px;
     text-align: center;
-    line-height: 52px;
+    line-height: 60px;
     /* background-color: red; */
     font-family: 'NeoC';
-    font-size: 20px;
+    font-size: 16px;
 }
-#login .login_form_p input{
+#join .join_form_p input{
     display: inline-block;
     width: 360px;
     height: 52px;
@@ -139,21 +141,60 @@ h1 .our_name span{
     border: none;
     outline: none;
 }
-#login .login_form_p:has(input:focus){
+
+#join .join_form_p:has(input:focus){
     border: 3px solid #fff;
     transition: border 0.5s;
 }
-#login .forget_pw{
-    margin: -15px 0 0 110px;
+/* 약관 동의 영역 */
+#checkbox{
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+    background-color: navy;
 }
-/* 로그인 회원가입 버튼 영역*/
-#login .login_form_submit{
+#checkbox .join_form_cb{
+    padding: 5px 0;
+    cursor: pointer;
+}
+#checkbox input.join_form_input_cb{
+    position: relative;
+    width: 20px;
+    
+}
+#checkbox .line{
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    border-radius: 1px;
+}
+/* --------------------------여기서부터 해야됨-------------------
+잉ㄴ풋.......생긴거 바꿔야돼ㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐ*/
+#checkbox .join_form_cb input + label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bcbcbc;
+    cursor: pointer;
+}
+#checkbox .join_form_cb input:checked + label {
+    background-color: #666666;
+}
+#checkbox .join_form_cb input {
+    display: none;
+}
+/* 회원가입하기 버튼 영역*/
+#join .join_form_submit{
     position: relative;
     height: 100px;
-    margin: 50px 100px;
+    margin: 0px auto 0;
+    border: 3px solid salmon;
 }
-#login .login_form_btn{
-    margin: 20px auto;
+#join .join_form_btn{
+    position: relative;
+    margin: 20px 100px;
+    width: 500px;
     height: 60px;
     border: 3px solid #aaa;
     border-radius: 40px;
@@ -162,55 +203,7 @@ h1 .our_name span{
     font-size: 20px;
     color: #fff;
 }
-#login .login_form_login{
-    position: absolute;
-    left: 0;
-    width: 300px;
-}
-#login .login_form_join{
-    position: absolute;
-    right: 0;
-    width: 150px;
-    /* background-image: linear-gradient(0deg, #aaa 0%, #999 30%, #999 70%, #aaa 100%); */
-}
-#login .login_form_btn:hover{
+#join .join_form_btn:hover{
     border: 3px solid #fff;
     transition: border 0.5s;
-}
-
-/* sns로 로그인하기 영역 */
-#sns_login{
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-}
-#sns_login .title{
-    margin: 10px 0;
-    text-align: center;
-    color: #fff;
-    font-family: 'NeoC';
-    font-size: 20px;
-}
-#sns_login .sns_logo{
-    position: relative;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#sns_login .sns_logo .logo{
-    position: relative;
-    margin: 0 10px;
-    display: inline-block;
-    flex: 0;
-}
-#sns_login .sns_logo img{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-}
-#sns_login .sns_logo .logo .logo_name{
-    font-size: 12px;
-    color: #fff;
-    font-family: 'NeoA';
 }

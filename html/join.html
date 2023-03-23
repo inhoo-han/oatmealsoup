@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div id="login_wrap">
+        <!---------- [S] 왼쪽 헤더영역 ---------->
+        <header>
+            <h1 class="title" onclick="location.href='../index.html'">
+                <div class="inner">
+                    <div class="game_name">
+                        <p><b>카인</b>컴플렉스</p>
+                    </div>
+                    <p class="team_name"><a href="#">PUBLISHED by TeamOMS</a></p>
+                    <p class="our_name">
+                        <span>환영합니다.</span>
+                    </p>
+                </div>
+            </h1>
+            <div id="footer">
+                copyright &copy; <span>TeamOatMealSoup.</span> All Rights Reserved.
+            </div>
+        </header>
+        <!---------- [E] 왼쪽 헤더영역 ---------->
+        <!---------- [S] 오른쪽 로그인영역 ---------->
+        <div id="join_area">
+            <div id="container">
+                <!-- 타이틀 -->
+                <h2 class="title">
+                    <p class="title_p title_p1">JOIN</p>
+                    <p class="title_p title_p2">US</p>
+                </h2>
+                <!-- 회원가입 정보 입력 및 전송 영역 -->
+                <div id="join">
+                    <fieldset>
+                        <legend>회원가입 영역</legend>
+                        <form action="#" method="get" name="join_form">
+                            <p class="join_form_p join_form_name">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" required>
+                            </p>
+                            <p class="join_form_p join_form_id">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email" required>
+                            </p>
+                            <p class="join_form_p join_form_pw">
+                                <label for="pw">비밀번호</label>
+                                <input type="password" id="pw" required>
+                            </p>
+                            <p class="join_form_p join_form_pw_check">
+                                <label for="pw">재입력</label>
+                                <input type="password" id="pw" required>
+                            </p>
+                            <div id="checkbox">
+                                <p class="join_form_cb join_form_all">
+                                    <label for="all_cb">전체동의</label>
+                                    <input type="checkbox" id="all_cb" class="join_form_input_cb" required>
+                                    <label for="all_cb"></label>
+                                </p>
+                                <p class="line"></p>
+                                <p class="join_form_cb join_form_use">
+                                    <label for="use">이용약관 동의*</label>
+                                    <input type="checkbox" id="use" class="join_form_input_cb" required>
+                                    <label for="use"></label>
+                                </p>
+                                <p class="join_form_cb  join_form_userinfo">
+                                    <label for="userinfo">카인컴플렉스 개인정보 수집 및 이용 동의*</label>
+                                    <input type="checkbox" id="userinfo" class="join_form_input_cb" required>
+                                    <label for="userinfo"></label>
+                                </p>
+                                <p class="join_form_cb  join_form_ad">
+                                    <label for="ad">(선택)마케팅 활용 동의 및 광고 수신 동의</label>
+                                    <input type="checkbox" id="ad" class="join_form_input_cb">
+                                    <label for="ad"></label>
+                                </p>
+                            </div>
+                            <p class="join_form_submit">
+                                <button class="join_form_btn join_form_submit" type="submit">회원가입하기</button>
+                            </p>
+                        </form>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+        <!---------- [E] 오른쪽 로그인영역 ---------->
+    </div>
+</body>
