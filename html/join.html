@@ -12,7 +12,7 @@
     <title>회원가입</title>
 </head>
 <body>
-    <div id="login_wrap">
+    <div id="join_wrap">
         <!---------- [S] 왼쪽 헤더영역 ---------->
         <header>
             <h1 class="title" onclick="location.href='../index.html'">
@@ -44,29 +44,38 @@
                     <fieldset>
                         <legend>회원가입 영역</legend>
                         <form action="#" method="post" name="join_form">
+                            <!-- 이름 입력 -->
                             <p class="join_form_p join_form_name">
                                 <label for="name">이름</label>
-                                <input type="text" id="name" required>
+                                <input type="text" id="name" required placeholder="이름을 입력해주세요.">
                             </p>
+                            <!-- 이메일 입력 -->
                             <p class="join_form_p join_form_id">
                                 <label for="email">이메일</label>
-                                <input type="email" id="email" required>
+                                <input type="email" id="email" required placeholder="이메일을 입력해주세요.">
                             </p>
+                            <!-- 비밀번호 입력 -->
                             <p class="join_form_p join_form_pw">
                                 <label for="pw">비밀번호</label>
-                                <input type="password" id="pw" required>
+                                <input type="password" id="pw" required minlength="8" placeholder="8자이상 입력해주세요.">
                             </p>
+                            <!-- 비밀번호 확인 -->
                             <p class="join_form_p join_form_pw_check">
-                                <label for="pw_re">재입력</label>
-                                <input type="password" id="pw_re" required>
+                                <label for="pw_check">재입력</label>
+                                <input type="password" id="pw_check" required placeholder="비밀번호 확인">
                             </p>
+                            <!-- 비밀번호 일치여부 -->
+                            <font id="pw_notice" size="2"><br></font>
+                            <!-- 체크박스 영역 -->
                             <div id="checkbox">
+                                <!-- 전체 선택 -->
                                 <p class="join_form_cb join_form_all">
                                     <label for="all_cb" class="cb_all">전체동의</label>
-                                    <input type="checkbox" id="all_cb" required>
+                                    <input type="checkbox" id="all_cb">
                                     <label for="all_cb"></label>
                                 </p>
                                 <p class="line"></p>
+                                <!-- 하위선택 영역 -->
                                 <p class="join_form_cb join_form_etc">
                                     <label for="use" class="cb_text">이용약관 동의*</label>
                                     <input type="checkbox" id="use" class="join_form_input_cb" required>
