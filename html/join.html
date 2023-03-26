@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/join.css">
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/join.js"></script>
     <title>회원가입</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
                 <div id="join">
                     <fieldset>
                         <legend>회원가입 영역</legend>
-                        <form action="#" method="get" name="join_form">
+                        <form action="#" method="post" name="join_form">
                             <p class="join_form_p join_form_name">
                                 <label for="name">이름</label>
                                 <input type="text" id="name" required>
@@ -56,28 +57,28 @@
                                 <input type="password" id="pw" required>
                             </p>
                             <p class="join_form_p join_form_pw_check">
-                                <label for="pw">재입력</label>
-                                <input type="password" id="pw" required>
+                                <label for="pw_re">재입력</label>
+                                <input type="password" id="pw_re" required>
                             </p>
                             <div id="checkbox">
                                 <p class="join_form_cb join_form_all">
-                                    <label for="all_cb">전체동의</label>
-                                    <input type="checkbox" id="all_cb" class="join_form_input_cb" required>
+                                    <label for="all_cb" class="cb_all">전체동의</label>
+                                    <input type="checkbox" id="all_cb" required>
                                     <label for="all_cb"></label>
                                 </p>
                                 <p class="line"></p>
-                                <p class="join_form_cb join_form_use">
-                                    <label for="use">이용약관 동의*</label>
+                                <p class="join_form_cb join_form_etc">
+                                    <label for="use" class="cb_text">이용약관 동의*</label>
                                     <input type="checkbox" id="use" class="join_form_input_cb" required>
                                     <label for="use"></label>
                                 </p>
-                                <p class="join_form_cb  join_form_userinfo">
-                                    <label for="userinfo">카인컴플렉스 개인정보 수집 및 이용 동의*</label>
+                                <p class="join_form_cb  join_form_etc">
+                                    <label for="userinfo" class="cb_text">카인컴플렉스 개인정보 수집 및 이용 동의*</label>
                                     <input type="checkbox" id="userinfo" class="join_form_input_cb" required>
                                     <label for="userinfo"></label>
                                 </p>
-                                <p class="join_form_cb  join_form_ad">
-                                    <label for="ad">(선택)마케팅 활용 동의 및 광고 수신 동의</label>
+                                <p class="join_form_cb  join_form_etc">
+                                    <label for="ad" class="cb_text">(선택)마케팅 활용 동의 및 광고 수신 동의</label>
                                     <input type="checkbox" id="ad" class="join_form_input_cb">
                                     <label for="ad"></label>
                                 </p>

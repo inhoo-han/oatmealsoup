@@ -1,6 +1,6 @@
 $(function() {
 
-    /* nav .toggle span click() */
+    // nav .toggle span click()
     let navSW = false;
     $('.toggle').click(function() {
         navSW = !navSW;

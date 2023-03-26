@@ -118,15 +118,14 @@ h1 .our_name span{
     border: 3px solid #aaa;
     border-radius: 40px;
     background-color: transparent;
-    border: 3px solid yellow;
 }
 #join .join_form_p label{
     display: inline-block;
     width: 120px;
-    height: 60px;
+    height: 54px;
     padding-left: 10px;
     text-align: center;
-    line-height: 60px;
+    line-height: 54px;
     /* background-color: red; */
     font-family: 'NeoC';
     font-size: 16px;
@@ -141,7 +140,6 @@ h1 .our_name span{
     border: none;
     outline: none;
 }
-
 #join .join_form_p:has(input:focus){
     border: 3px solid #fff;
     transition: border 0.5s;
@@ -149,47 +147,51 @@ h1 .our_name span{
 /* 약관 동의 영역 */
 #checkbox{
     position: relative;
-    width: 100%;
-    padding: 0 100px;
-    background-color: navy;
+    top: -15px;
+    width: 100%-200px;
+    margin: 0 100px;
+    /* background-color: navy; */
 }
 #checkbox .join_form_cb{
-    padding: 5px 0;
+    padding: 15px 0;
     cursor: pointer;
-}
-#checkbox input.join_form_input_cb{
-    position: relative;
-    width: 20px;
-    
 }
 #checkbox .line{
     position: relative;
     width: 100%;
-    margin: 5px 0;
+    margin: 20px 0px 0px;
     border: 1px solid #fff;
     border-radius: 1px;
 }
-/* --------------------------여기서부터 해야됨-------------------
-잉ㄴ풋.......생긴거 바꿔야돼ㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐㅐ*/
-#checkbox .join_form_cb input + label {
+#checkbox .join_form_cb input + label{
+    position: absolute;
+    left: 10px;
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #bcbcbc;
+    border: 2px solid #aaa;
+    border-radius: 3px;
     cursor: pointer;
 }
-#checkbox .join_form_cb input:checked + label {
-    background-color: #666666;
+#checkbox .join_form_cb input:checked + label{
+    background-color: #fff;
 }
-#checkbox .join_form_cb input {
+#checkbox .join_form_cb input{
     display: none;
+}
+#checkbox .join_form_cb label.cb_text, label.cb_all{
+    position: absolute;
+    left: 40px;
+    height: 20px;
+    line-height: 20px;
+    
 }
 /* 회원가입하기 버튼 영역*/
 #join .join_form_submit{
     position: relative;
     height: 100px;
-    margin: 0px auto 0;
-    border: 3px solid salmon;
+    margin: 10px auto 0;
+    /* border: 3px solid salmon; */
 }
 #join .join_form_btn{
     position: relative;
