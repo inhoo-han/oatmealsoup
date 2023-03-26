@@ -9,6 +9,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: 100vh;
     min-width: 1200px;
     /* border: 10px dashed transparent;
     border-image: linear-gradient(to bottom, #3423a6 0%, #171738 100%);
